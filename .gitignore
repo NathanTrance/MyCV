@@ -1,0 +1,44 @@
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.synctex(busy)
+*.xdv
+*.bbl
+*.blg
+*.nav
+*.snm
+*.vrb
+*.run.xml
+*.bcf
+
+# Compiled PDFs are intentionally committed so the CVs can be linked and
+# downloaded straight from the repository. Do not add "*.pdf" here.
+#
+# Only the main resume.pdf is published. Application-specific PDFs are built
+# locally and kept out of the repository:
+resume-apple.pdf
+resume-cantina.pdf
+coverletter-apple.pdf
+coverletter-cantina.pdf
+cv.pdf
+coverletter.pdf
+
+# OS and editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*~
+.vscode/
+.idea/
+
+# Local scratch files
+*.tmp
+*.bak

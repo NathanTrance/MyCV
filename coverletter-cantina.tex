@@ -1,0 +1,83 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Cover letter: Cantina - Machine Learning Engineer (Singapore)
+% Build with: xelatex coverletter-cantina.tex
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+\documentclass[11pt, a4paper]{awesome-cv}
+
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+\fontdir[fonts/]
+
+\colorlet{awesome}{awesome-red}
+\setbool{acvSectionColorHighlight}{true}
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%-------------------------------------------------------------------------------
+\name{Hong Nhat -}{Tran}
+\position{Machine Learning Engineer{\enskip\cdotp\enskip}Speech \& Multimodal Data}
+\address{Kim Ma street, Giang Vo ward, Hanoi, Vietnam}
+
+\mobile{(+84) 936-167-646}
+\email{tranhongnhat1911@gmail.com}
+\github{NathanTrance}
+\linkedin{nhattran2003}
+
+\quote{``We can only see a short distance ahead, but we can see plenty there that needs to be done."}
+
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%-------------------------------------------------------------------------------
+\recipient
+  {Machine Learning Engineering}
+  {Cantina\\Singapore}
+\letterdate{\today}
+\lettertitle{Application: Machine Learning Engineer (Singapore)}
+\letteropening{Dear Cantina team,}
+\letterclosing{Sincerely,}
+\letterenclosure[Attached]{Curriculum Vitae}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+\makecvheader[C]
+
+\makecvfooter
+  {\today}
+  {Hong Nhat Tran~~~·~~~Cover Letter}
+  {}
+
+\makelettertitle
+
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+\lettersection{Why Cantina}
+Characters only feel alive if the data behind them is good. I have spent the last two years on the unglamorous half of that problem: deciding what counts as a high-quality sample, building the pipeline that selects it, and measuring whether it actually moved the model. Cantina is one of the few teams treating that loop, data, model and evaluation, as the product rather than an afterthought, and I would like to work on it at the scale your characters require.
+
+\lettersection{What I bring}
+At Viettel AI I designed SpeechPie, a 7-step pipeline that collected, cleaned and filtered 10,000 hours of Vietnamese speech, and SpeechCake, the training and inference pipeline built on top of it for zero-shot TTS, later extended to voice design and paralinguistic generation across 14 tags. I defined the benchmarks and listening tests we used to compare systems, and the resulting model reached state-of-the-art voice cloning and speech editing results against Vietnamese baselines. I now adapt English TTS, vision-language and embedding models to Vietnamese for Viettel's Personal AI phone on Qualcomm's platform, which means models have to work under on-device latency and memory limits, not just in a notebook. I have contributed to eight publications, including EMNLP 2026 and INTERSPEECH 2026.
+
+Most of my work has been on audio rather than video, but the problem is the same: define what good data is, build the pipeline that selects and refreshes it, and prove the model improved. I learn domains quickly, I like owning the measurement, and I am happy to relocate to Singapore or work remotely from Hanoi, whichever the team prefers.
+
+\lettersection{Why me}
+I am comfortable between research and infrastructure: writing training and evaluation code, debugging data at scale, and arguing about which metric actually reflects quality. That is the combination the Singapore team is hiring for, and it is the work I want to keep doing.
+
+\end{cvletter}
+
+
+%-------------------------------------------------------------------------------
+\makeletterclosing
+
+\end{document}

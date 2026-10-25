@@ -1,0 +1,67 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Tailored resume: Cantina - Machine Learning Engineer (Singapore)
+% Build with: xelatex resume-cantina.tex
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+\colorlet{awesome}{awesome-red}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%-------------------------------------------------------------------------------
+\name{Hong Nhat -}{Tran}
+\position{Machine Learning Engineer{\enskip\cdotp\enskip}Speech \& Multimodal Data}
+\address{Kim Ma street, Giang Vo ward, Hanoi, Vietnam}
+
+\mobile{(+84) 936-167-646}
+\email{tranhongnhat1911@gmail.com}
+\github{NathanTrance}
+\linkedin{nhattran2003}
+
+\quote{``We can only see a short distance ahead, but we can see plenty there that needs to be done."}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+\makecvheader[C]
+
+\makecvfooter
+  {\today}
+  {Hong Nhat Tran~~~·~~~CV}
+  {\thepage}
+
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%-------------------------------------------------------------------------------
+\input{resume/summary-cantina.tex}
+\input{resume/education.tex}
+\input{resume/skill-cantina.tex}
+\input{resume/experience.tex}
+\input{resume/projects}
+\input{resume/publication-cantina}
+\input{resume/honors.tex}
+
+
+%-------------------------------------------------------------------------------
+\end{document}

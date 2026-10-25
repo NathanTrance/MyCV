@@ -1,0 +1,82 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Cover letter: Apple - Siri Language Engineer (Vietnamese), Singapore
+% Req 200685824-3278
+% Build with: xelatex coverletter-apple.tex
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+\documentclass[11pt, a4paper]{awesome-cv}
+
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+\fontdir[fonts/]
+
+\colorlet{awesome}{awesome-red}
+\setbool{acvSectionColorHighlight}{true}
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%-------------------------------------------------------------------------------
+\name{Hong Nhat -}{Tran}
+\position{Machine Learning Engineer{\enskip\cdotp\enskip}Speech \& Language}
+\address{Kim Ma street, Giang Vo ward, Hanoi, Vietnam}
+
+\mobile{(+84) 936-167-646}
+\email{tranhongnhat1911@gmail.com}
+\github{NathanTrance}
+\linkedin{nhattran2003}
+
+\quote{``We can only see a short distance ahead, but we can see plenty there that needs to be done."}
+
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%-------------------------------------------------------------------------------
+\recipient
+  {Siri Language Engineering}
+  {Apple\\Singapore}
+\letterdate{\today}
+\lettertitle{Application: Siri Language Engineer (Vietnamese)}
+\letteropening{Dear Siri Language Engineering team,}
+\letterclosing{Sincerely,}
+\letterenclosure[Attached]{Curriculum Vitae}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+\makecvheader[C]
+
+\makecvfooter
+  {\today}
+  {Hong Nhat Tran~~~·~~~Cover Letter}
+  {}
+
+\makelettertitle
+
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+\lettersection{Why Vietnamese, why Siri}
+I am applying for the Siri Language Engineer (Vietnamese) role. I am a Vietnamese-native machine learning engineer, and for the past two years I have been building Vietnamese speech systems in production: zero-shot text-to-speech, voice cloning, and the data pipelines behind them. Today I adapt English TTS, vision-language and embedding models to Vietnamese for Viettel's Personal AI phone, built on Qualcomm's reference design and SDK. The question your team owns, whether a Vietnamese speaker feels understood by the device, is the question I have been working on every day.
+
+\lettersection{What I bring}
+I built SpeechPie, a 7-step pipeline that collected and curated 10,000 hours of Vietnamese speech, and SpeechCake, a training and inference pipeline for zero-shot TTS that we extended to voice design and paralinguistic generation across 14 Vietnamese tags. I designed the benchmarks and listening tests we used to compare systems, and the resulting model reached state-of-the-art voice cloning and speech editing results against Vietnamese TTS baselines. I have also contributed to eight publications, including EMNLP 2026 and INTERSPEECH 2026, and I work comfortably across data generation, model training and evaluation, which is the loop this role owns. My English is professional working proficiency (IELTS 8.0), and I am ready to relocate to Singapore.
+
+\lettersection{Why Apple}
+Language quality at Apple's scale is a different problem from a research benchmark: it has to hold up for millions of speakers, on-device, across dialects and code-switching, with privacy built in. That is exactly the constraint I find interesting, and Vietnamese is a language where small quality differences are very visible to users. I would like to bring my production experience in Vietnamese speech to the team that ships it to them.
+
+\end{cvletter}
+
+
+%-------------------------------------------------------------------------------
+\makeletterclosing
+
+\end{document}
